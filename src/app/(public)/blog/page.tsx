@@ -82,8 +82,8 @@ export default function Blog() {
                                     <Image
                                         src={blog.img}
                                         alt="blog"
-                                        layout="fill"
-                                        objectFit="cover"
+                                      fill
+                                         className="object-cover"
                                     />
                                 </div>
                                 <div className="p-[30px] bg-white">
