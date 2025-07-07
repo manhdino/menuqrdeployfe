@@ -10,16 +10,15 @@ export default function NotificationsPage() {
     const clearNotifications = useAppStore((state) => state.clearNotifications)
     console.log('Thông báo', notifications)
     return (
-        <div className="relative flex flex-col h-[82vh] px-3 py-5">
+        <div className="relative flex flex-col h-[85vh] px-3 py-5">
             <div className="flex items-center justify-center gap-1 mb-4 text-sm font-semibold text-gray-500">
                 <Image src="/icons/titleIcon.svg" alt="Icon" width={14} height={14} />
                 <span className='text-base uppercase font-extrabold text-[#fc791a]'>Thông báo đặt món</span>
                 <Image src="/icons/titleIcon.svg" alt="Icon" width={14} height={14} />
             </div>
-            <div className="absolute bottom-5 right-1/2">
+            <div className="absolute top-3 right-2">
                 <div className="bg-[#fc791a] p-[6px] text-white rounded-md shadow-md">
                     <Trash2 onClick={clearNotifications} className="w-5 h-5 " />
-
                 </div>
             </div>
             {notifications.length > 0 ? (

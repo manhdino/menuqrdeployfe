@@ -47,7 +47,7 @@ export default function CartPage() {
 
 
     return (
-        <div className="flex flex-col h-[82vh] px-3 py-5">
+        <div className="flex flex-col h-[85vh] px-3 py-5">
             {orders.length > 0 ? (
                 <>
                     <div className="flex items-center justify-center gap-1 mb-4 text-sm font-semibold text-gray-500">
