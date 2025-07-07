@@ -9,7 +9,7 @@ import Dishes from './components/dishes'
 import { DishListResType } from '@/validations/dish.schema'
 import dishApiRequest from '@/requests/dish'
 import { Button } from '@/components/ui/button'
-
+import Link from 'next/link'
 
 export default async function Home() {
   let dishList: DishListResType['data'] = []
@@ -29,9 +29,9 @@ export default async function Home() {
             <p className="mb-4 text-3xl font-bold text-gray-600">Đã xảy ra sự cố!</p>
             <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
               Xin lỗi, chúng tôi không thể tìm thấy trang bạn yêu cầu.</p>
-            <a href='/' className=" text-white bg-[#fc791a] hover:bg-orange-700  focus:outline-none ont-medium rounded-lg text-sm px-5 py-2.5 text-center  my-4">
+            <Link  href='/' className=" text-white bg-[#fc791a] hover:bg-orange-700  focus:outline-none ont-medium rounded-lg text-sm px-5 py-2.5 text-center  my-4">
               Quay lại Trang chủ
-            </a>
+            </Link>
           </div>
         </div>
       </section>

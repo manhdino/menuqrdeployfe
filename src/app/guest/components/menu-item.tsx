@@ -1,5 +1,6 @@
 import { Plus } from "lucide-react";
 import { RiHeartLine } from "react-icons/ri";
+import Image from 'next/image'
 
 interface MenuItemProps {
     image: string;
@@ -14,13 +15,13 @@ export const MenuItem: React.FC<MenuItemProps> = ({ image, title, description, c
     return (
         <li className="w-full grid grid-cols-[34%_1fr] gap-3 items-center bg-white rounded-md shadow-sm pl-1 pt-1.5 pb-1.5 relative">
             <div className="relative w-full h-full">
-                <img
+                <Image
                     src={image}
                     alt={title}
                     className="w-full h-full object-cover rounded-xl cursor-pointer"
                 />
                 {badge && (
-                    <img
+                    <Image
                         src={badge}
                         alt="badge"
                         className="absolute left-2 top-2 w-5 h-auto"

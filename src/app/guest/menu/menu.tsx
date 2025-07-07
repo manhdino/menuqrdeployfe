@@ -22,7 +22,7 @@ export default function Menu() {
     if (dishes.length > 0) {
       setDishes(dishes)
     }
-  }, [dishes])
+  }, [dishes,setDishes])
 
   const handleQuantityChange = (dishId: number, quantity: number) => {
     let newOrders: GuestCreateOrdersBodyType
@@ -66,7 +66,7 @@ export default function Menu() {
               <div className="relative py-2 pl-2">
                 <Image src={item.image} alt={item.name} width={80} height={80} />
                 {badge && (
-                  <img
+                  <Image
                     src={badge}
                     alt="badge"
                     className={`absolute h-auto left-1 top-2 ${badge.includes('new') ? 'w-7' : 'w-3'}`}

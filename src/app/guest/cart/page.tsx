@@ -63,7 +63,7 @@ export default function CartPage() {
                                 <div key={order.dishId} className="flex items-center gap-[13px] bg-white rounded-md shadow-lg ">
                                     <div className="w-3 pl-3 text-sm font-semibold text-gray-700">{index + 1}.</div>
                                     <div className="flex items-center justify-center p-2">
-                                        <img
+                                        <Image
                                             src={dish.image}
                                             alt={dish.name}
                                             className="object-cover w-[83px] h-[83px]"
